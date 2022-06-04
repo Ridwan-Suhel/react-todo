@@ -64,6 +64,8 @@ input {
   padding: 0px 10px;
   color: #fff;
   font-weight: 400;
+
+  font-size: 18px;
 }
 .icon.red {
   color: rgb(138, 12, 12);
@@ -72,4 +74,8 @@ input {
 .icon.green {
   color: rgb(19, 78, 19);
   cursor: pointer;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
