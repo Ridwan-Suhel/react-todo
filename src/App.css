@@ -6,12 +6,34 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 28px;
 }
-.h-5 {
-  height: 15px;
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.w-5 {
-  width: 15px;
+input {
+  border: 1px solid #333;
+  text-align-last: left;
+  width: 320px;
+  height: 30px;
 }
-.text-blue {
+
+.todo-btn {
+  padding-left: 6px;
+  padding-right: 6px;
+  cursor: pointer;
+}
+.icon {
   color: blue;
+  width: 25px;
+  height: 25px;
+}
+/* .select {
+  height: 30px;
+  width: 50px;
+} */
+.filter-todos {
+  height: 34px;
+  width: 50px;
+  cursor: pointer;
 }
