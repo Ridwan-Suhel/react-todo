@@ -1,7 +1,7 @@
 import React from "react";
 import { PlusIcon } from "@heroicons/react/solid";
 
-const Form = ({ inputTxt, setInputTxt, setTodos, todos }) => {
+const Form = ({ inputTxt, setInputTxt, setTodos, todos, setStatus }) => {
   const inputTextHandler = (e) => {
     setInputTxt(e.target.value);
   };
@@ -13,6 +13,10 @@ const Form = ({ inputTxt, setInputTxt, setTodos, todos }) => {
     ]);
 
     setInputTxt("");
+  };
+
+  const statusHandler = (e) => {
+    setStatus(e.targer.value);
   };
   return (
     <div>
@@ -32,7 +36,12 @@ const Form = ({ inputTxt, setInputTxt, setTodos, todos }) => {
             <PlusIcon className="icon" />
           </button>
           <div className="select">
-            <select name="todos" className="filter-todos" id="">
+            <select
+              onChange={statusHandler}
+              name="todos"
+              className="filter-todos"
+              id=""
+            >
               <option value="all">All</option>
               <option value="completed">Completed</option>
               <option value="uncompleted">Uncompleted</option>
